@@ -2,6 +2,9 @@ import Card from "./components/Card"
 import Contador from "./components/Contador"
 import Hello from "./components/Hello"
 import ListaCards from "./components/ListaCards"
+import TabelaProdutos from "./components/TabelaProdutos"
+import listaLivros from "./data/livros.json"
+
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
         <p>Descrição: Meu Produto é bom!</p>
       </Card>
       <ListaCards></ListaCards>
+      <TabelaProdutos lista = {listaLivros}></TabelaProdutos>
     </>
   )
 }
